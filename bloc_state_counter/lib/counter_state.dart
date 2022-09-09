@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 
 class CounterState extends Equatable {
-  int? counter;
+  final int? counter;
 
-  CounterState({this.counter});
+  const CounterState({this.counter});
 
   CounterState copyWith({int? counter}) {
     return CounterState(counter: counter ?? this.counter);
